@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/givePassportFragment">
+
+    <fragment
+        android:id="@+id/givePassportFragment"
+        android:name="com.example.passportotabekaka.fragments.GivePassportFragment"
+        android:label="fragment_give_passport"
+        tools:layout="@layout/fragment_give_passport" >
+        <action
+            android:id="@+id/action_givePassportFragment_to_addUserFragment2"
+            app:destination="@id/addUserFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/addUserFragment2"
+        android:name="com.example.passportotabekaka.fragments.AddUserFragment"
+        android:label="fragment_add_user"
+        tools:layout="@layout/fragment_add_user" />
+</navigation>
